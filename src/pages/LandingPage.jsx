@@ -1,4 +1,8 @@
 import { Header } from "../Components/Header";
+import  hero from '../assets/images/hero.jpg';
+import  ai from '../assets/images/ai.jpg';
+import  farm from '../assets/images/farm.jpg';
+import  vege from '../assets/images/Vege.jpg';
 export const LandingPage = () => {
   return (
     <>
@@ -6,7 +10,7 @@ export const LandingPage = () => {
       <main className="flex-grow">
         <section
           className="relative min-h-[60vh] flex items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: "url('/src/assets/images/hero.jpg')" }}
+          style={{ backgroundImage: `url(${hero})` }}
         >
           <div className="text-center px-4 max-w-4xl text-white">
             <h1 className="text-4xl md:text-6xl font-black tracking-tight text-shadow">
@@ -43,7 +47,7 @@ export const LandingPage = () => {
                 <div
                   className="w-full h-48 bg-cover bg-center"
                   style={{
-                    backgroundImage: "url('/src/assets/images/Vege.jpg')",
+                    backgroundImage: `url('${vege}')`,
                   }}
                 ></div>
                 <div className="p-6">
@@ -61,7 +65,7 @@ export const LandingPage = () => {
                 <div
                   className="w-full h-48 bg-cover bg-center"
                   style={{
-                    backgroundImage: "url('/src/assets/images/ai.jpg')",
+                    backgroundImage: `url('${ai}')`,
                   }}
                 ></div>
                 <div className="p-6">
@@ -79,7 +83,7 @@ export const LandingPage = () => {
                 <div
                   className="w-full h-48 bg-cover bg-center"
                   style={{
-                    backgroundImage: "url('/src/assets/images/farm.jpg')",
+                    backgroundImage: `url('${farm}')`,
                   }}
                 ></div>
                 <div className="p-6">
